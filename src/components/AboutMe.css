@@ -1,0 +1,22 @@
+.about-container p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .about-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills-list {
+    padding: 0;
+  }
+  
+  .skills-list li {
+    background-color: #e6f2ff;
+    color: #3366cc;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+  }
