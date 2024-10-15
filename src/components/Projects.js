@@ -4,24 +4,29 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
+      title: "Symbia",
+      description: "Building an AI image generation tool that translates scientific text prompt / image of a rough, hand-drawn sketch into figures for publications and conferences. I have been experimenting with fine-tuning of image generation models, ControlNet, post-generation processing tools like InstructPix2Pix, and more!",
+      link: " "
+    },
+    {
+      title: "Mitigating Catastrophic Forgetting in Continual Learning",
+      description: "Implementing methods to mitigate catastrophic forgetting in continual learning of LLMs while keeping computation efficient. Currently expanding it to multimodal language models and diffusion models. Researching under mentorship of Professor Gabriel Kreiman at Harvard.",
+      link: " "
+    },
+    {
       title: "LungTech",
-      description: "Developed ML model with 80% accuracy for lung disease detection via cough recordings. Integrated model into Swift-based app. Click here for model, Click here for app demo.",
+      description: "Built an iOS app with an integrated ML model achieving 80%+ accuracy in detecting lung disease through cough recordings.",
       link: "https://github.com/aonori3/LungTech"
     },
     {
       title: "Recipe Generator App",
-      description: "Developed an iOS app for AI-generated recipes using Swift, OpenAI API, and Firebase. Click here for app demo.",
+      description: "Built an iOS app for AI-generated recipes using Swift, OpenAI API, and Firebase.",
       link: "https://github.com/aonori3/recipie.git"
     },
     {
       title: "Splice Predictor",
-      description: "Implemented RNN-based model for splice site prediction in DNA seqs, achieving 95%+ accuracy.",
-      link: "https://github.com/yourusername/healthcare-ai-assistant"
-    },
-    {
-      title: "Symbia Co.",
-      description: "Developing an AI image generation tool that translates scientific descriptions into figures for publications/conferences.",
-      link: "https://github.com/yourusername/generative-art-platform"
+      description: "Implemented RNN-based model for splice site prediction in DNA seqs, achieving 95%+ accuracy. This was a final project for Math 243, a course on mathematical dynamics taught by Professor Martin A. Nowak at Harvard.",
+      link: "https://github.com/aonori3/SplicePredictor/tree/main"
     }
   ];
 
@@ -30,10 +35,10 @@ const Projects = () => {
       <ul className="projects-list">
         {projects.map((project, index) => (
           <li key={index}>
-            <a href={project.link} className="project-title" target="_blank" rel="noopener noreferrer">
+            <a href={project.link} className="project-title fira-sans-semibold" target="_blank" rel="noopener noreferrer">
               {project.title}
             </a>
-            <p className="project-description">{project.description}</p>
+            <p className="project-description fira-sans-regular">{project.description}</p>
           </li>
         ))}
       </ul>

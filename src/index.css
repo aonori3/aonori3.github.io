@@ -1,3 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Your existing styles */
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  /* Fira Sans utility classes */
+  .fira-sans-thin { font-weight: 100; }
+  .fira-sans-extralight { font-weight: 200; }
+  .fira-sans-light { font-weight: 300; }
+  .fira-sans-regular { font-weight: 400; }
+  .fira-sans-medium { font-weight: 500; }
+  .fira-sans-semibold { font-weight: 600; }
+  .fira-sans-bold { font-weight: 700; }
+  .fira-sans-extrabold { font-weight: 800; }
+  .fira-sans-black { font-weight: 900; }
+  
+  .fira-sans-italic { font-style: italic; }
+  
+  /* Light mode */
+  body.light-mode,
+  .light-mode {
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  /* Dark mode */
+  body.dark-mode,
+  .dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+  }

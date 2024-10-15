@@ -1,15 +1,56 @@
-.home-content {
-    text-align: center;
-    padding: 50px 0;
-  }
-  
-  .home-content h2 {
-    color: #3366cc;
-    margin-bottom: 20px;
-  }
-  
-  .home-content p {
-    color: #666;
-    max-width: 600px;
-    margin: 0 auto;
-  }
+.homepage-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.name {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+.bio {
+  margin-bottom: 30px;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.list li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.list li::before {
+  content: "•";
+  position: absolute;
+  left: -20px;
+}
+
+.projects-section {
+  margin-bottom: 30px;
+}
+
+.projects-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.projects-section a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Dark mode styles */
+.dark-mode .homepage-container {
+  color: #e0e0e0;
+}
+
+.dark-mode .bio, 
+.dark-mode .projects-section {
+  color: #b0b0b0;
+}

@@ -1,9 +1,21 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #e6f2ff, #d9e6ff);
   min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode,
+.light-mode {
+  background-color: #ffffff;
+  color: #333;
+}
+
+body.dark-mode,
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
 }
 
 .app-container {
@@ -19,12 +31,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
-}
-
-h1 {
-  margin: 0;
-  color: #3366cc;
+  margin-bottom: 40px;
 }
 
 nav ul {
@@ -38,14 +45,29 @@ nav ul li {
   margin-left: 20px;
 }
 
-nav ul li a {
+/* Global link styles */
+a {
   text-decoration: none;
-  color: #3366cc;
-  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: #1a3366;
+/* Light mode link color */
+.light-mode a {
+  color: #333;
+}
+
+/* Dark mode link color */
+.dark-mode a {
+  color: #f0f0f0;
+}
+
+/* Global hover styles */
+.light-mode a:hover {
+  color: #1454d4 !important; /* blueberry */
+}
+
+.dark-mode a:hover {
+  color: #ffef94 !important; /* cream yellow */
 }
 
 .content-container {
@@ -53,15 +75,37 @@ nav ul li a:hover {
 }
 
 footer {
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
 }
 
 .social-links a {
   margin: 0 10px;
-  color: #666;
 }
 
-.social-links a:hover {
-  color: #3366cc;
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
 }
+
+.theme-toggle:focus {
+  outline: none;
+}
+
+/* Fira Sans utility classes */
+.fira-sans-thin { font-weight: 100; }
+.fira-sans-extralight { font-weight: 200; }
+.fira-sans-light { font-weight: 300; }
+.fira-sans-regular { font-weight: 400; }
+.fira-sans-medium { font-weight: 500; }
+.fira-sans-semibold { font-weight: 600; }
+.fira-sans-bold { font-weight: 700; }
+.fira-sans-extrabold { font-weight: 800; }
+.fira-sans-black { font-weight: 900; }
+.fira-sans-italic { font-style: italic; }
