@@ -21,10 +21,17 @@ body.dark-mode,
 .app-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 header {
@@ -72,6 +79,7 @@ a {
 
 .content-container {
   flex-grow: 1;
+  padding-top: 40px; 
 }
 
 footer {

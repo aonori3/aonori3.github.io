@@ -5,7 +5,7 @@ import './HomePage.css';
 const HomePage = () => {
   return (
     <div className="homepage-container">
-      <h1 className="name fira-sans-medium">Aoi Otani</h1>
+      <h1 className="fira-sans-medium">Aoi Otani</h1>
 
       <div className="bio">
         <p className="fira-sans-regular">
