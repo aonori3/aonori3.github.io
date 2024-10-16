@@ -6,12 +6,12 @@ const Projects = () => {
     {
       title: "Symbia",
       description: "Building an AI image generation tool that translates scientific text prompt / image of a rough, hand-drawn sketch into figures for publications and conferences. I have been experimenting with fine-tuning of image generation models, ControlNet, post-generation processing tools like InstructPix2Pix, and more!",
-      /* link: " " */
+      link: null  
     },
     {
       title: "Mitigating Catastrophic Forgetting in Continual Learning",
       description: "Implementing methods to mitigate catastrophic forgetting in continual learning of LLMs while keeping computation efficient. Currently expanding it to multimodal language models and diffusion models. Researching under mentorship of Professor Gabriel Kreiman at Harvard.",
-      /* link: " " */
+      link: null  
     },
     {
       title: "LungTech",
@@ -35,9 +35,13 @@ const Projects = () => {
       <ul className="projects-list">
         {projects.map((project, index) => (
           <li key={index}>
-            <a href={project.link} className="project-title fira-sans-semibold" target="_blank" rel="noopener noreferrer">
-              {project.title}
-            </a>
+            {project.link ? (
+              <a href={project.link} className="project-title fira-sans-semibold" target="_blank" rel="noopener noreferrer">
+                {project.title}
+              </a>
+            ) : (
+              <span className="project-title fira-sans-semibold">{project.title}</span>
+            )}
             <p className="project-description fira-sans-regular">{project.description}</p>
           </li>
         ))}
