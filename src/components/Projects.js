@@ -20,12 +20,12 @@ const Projects = () => {
     },
     {
       title: "Recipe Generator App",
-      description: "Built an iOS app for AI-generated recipes using Swift, OpenAI API, and Firebase.",
+      description: "Built an iOS app for AI-generated recipes using Swift.",
       link: "https://github.com/aonori3/recipie"
     },
     {
       title: "Splice Predictor",
-      description: "Implemented RNN-based model for splice site prediction in DNA seqs, achieving 95%+ accuracy. This was a final project for Math 243, a course on mathematical dynamics taught by Professor Martin A. Nowak at Harvard.",
+      description: "Implemented RNN-based model for splice site prediction in DNA seqs, achieving 95%+ accuracy. This was supervised by Professor Martin A. Nowak at Harvard.",
       link: "https://github.com/aonori3/SplicePredictor"
     }
   ];
