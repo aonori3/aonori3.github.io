@@ -11,6 +11,14 @@
   margin-bottom: 5px;
 }
 
+.profile-pic {
+  width: 150px;     
+  height: 150px;    
+  object-fit: cover; 
+}
+
+
+
 .bio {
   margin-bottom: 30px;
 }

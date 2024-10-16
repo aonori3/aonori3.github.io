@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <div className="homepage-container">
       <h1 className="fira-sans-medium">Aoi Otani</h1>
-
+      {/* <img src="/pfp.jpg" alt="Aoi Otani" className="profile-pic" />*/}
       <div className="bio">
         <p className="fira-sans-regular">
           I am currently a senior (fourth-year) at Harvard, studying Biology and Computer Science. 
